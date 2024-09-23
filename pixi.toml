@@ -1,0 +1,22 @@
+[project]
+name = "lonboard-radar-example"
+version = "0.1.0"
+description = "Add a short description here"
+authors = ["Kyle Barron <kyle@developmentseed.org>"]
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[tasks]
+
+[dependencies]
+lonboard = ">=0.9.3,<0.10"
+xarray = ">=2024.9.0,<2024.10"
+xradar = ">=0.6.5,<0.7"
+geopandas = ">=1.0.1,<1.1"
+ipykernel = ">=6.29.5,<6.30"
+
+[pypi-dependencies]
+arro3-core = "*"
+geoarrow-rust-core = ">=0.3.0, <0.4"
+geoarrow-pyarrow = ">=0.1.2, <0.2"
+pyxlma = { git = "https://github.com/deeplycloudy/xlma-python.git" }
